@@ -56,11 +56,11 @@ Hizmetlerimiz hakkında sorularınız mı var? Bize ulaşın, ekibimiz en kısa 
           </div>
           
           <div className="lg:col-span-2">
-            <div className="bg-gray-800 rounded-lg p-8" style={{width : "100vh"}}>
+            <div className="bg-gray-800 rounded-lg p-8">
                <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.343780287288!2d29.15744387598568!3d41.01773417134917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacfacee9b6cfb%3A0x2884640b9635bab3!2sDudullu%20Talebe%20Yurdu!5e0!3m2!1str!2str!4v1747069687063!5m2!1str!2str"
         width="100%"
-        height="350"
+        height="350px"
         style={{ border: 0 }}
         allowFullScreen
         loading="lazy"
