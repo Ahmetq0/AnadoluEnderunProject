@@ -8,11 +8,11 @@ import '../css/services.css'; // Önemli: özel CSS burada
 
 const Services: React.FC = () => {
   const services = [
-    { name: "Elvan Karacan Enderun", image: ElvanKaracan , },
-    { name: "Ferhatlar Enderun", image: Ferhatlar },
-    { name: "Osmangazi Enderun", image: OsmanGazi , with : "200" },
-    { name: "Yamanevler Enderun Bilişim", image: Yamanevler, with : "200" },
-    { name: "Yavuztürk Enderun Bilişim", image: YavuzTürk, with : "200" , color : "white"},
+    { name: "Elvan Karacan Enderun", image: ElvanKaracan , width:"150px" },
+    { name: "Ferhatlar Enderun", image: Ferhatlar , width: "150px" },
+    { name: "Osmangazi Enderun", image: OsmanGazi , width:"380px" },
+    { name: "Yamanevler Enderun Bilişim", image: Yamanevler, width : "300px" },
+    { name: "Yavuztürk Enderun Bilişim", image: YavuzTürk, width : "300px" , color : "white"},
   ];
 
   return (
@@ -35,8 +35,8 @@ const Services: React.FC = () => {
             <div key={index} className="flip-card">
               <div className="flip-card-inner">
                 {/* Ön Yüz */}
-                <div className="flip-card-front bg-gray-800 flex items-center justify-center rounded-lg">
-                  <img src={service.image} alt={service.name}  className="w-30 h-auto p-10"/>
+               <div className="flip-card-front bg-gray-800 flex items-center justify-center rounded-lg">
+                  <img src={service.image} alt={service.name}  style={{width : `${service.width}` , color : `${service.color}`}}  className="w-30 h-auto img-fluid lg:w-50 sm:w-30 xs:w-20  w-40"/>
                 </div>
 
                 {/* Arka Yüz */}
